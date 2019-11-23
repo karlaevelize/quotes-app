@@ -14,3 +14,7 @@ img {
 #dislike {
   background-color: red;
 }
+
+#heart {
+  width: 10%;
+}
