@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
-import QuoteSearcer from "./components/QuoteSearcher";
+import QuoteSearcher from "./components/QuoteSearcher";
 
 function App() {
   return (
     <div className="App">
-      <QuoteSearcer />
+      <main>
+        <QuoteSearcher />
+      </main>
     </div>
   );
 }
