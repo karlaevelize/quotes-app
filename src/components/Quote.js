@@ -7,7 +7,7 @@ class Quote extends Component {
   render() {
     return (
       <div className="quotes">
-        <p className="quoteText">{this.props.quoteText}</p>
+        <h3 className="quoteText">{this.props.quoteText}</h3>
         <p className="quoteAuthor">By: {this.props.quoteAuthor}</p>
       </div>
     );
