@@ -6,3 +6,11 @@ img {
   width: 50%;
   height: 50%;
 }
+
+#like {
+  background-color: green;
+}
+
+#dislike {
+  background-color: red;
+}

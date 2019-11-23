@@ -9,7 +9,9 @@ class Quote extends Component {
   render() {
     return (
       <div className="quotes">
-        <h3 className="quoteText">{this.props.quoteText}</h3>
+        <h3 style={this.props.style} className="quoteText">
+          {this.props.quoteText}
+        </h3>
         <p className="quoteAuthor">By: {this.props.quoteAuthor}</p>
         <LikeCounter />
         <DislikeCounter />

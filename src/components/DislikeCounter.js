@@ -16,7 +16,7 @@ export default class DislikeCounter extends Component {
       <div>
         <p>
           This quote has <b>{this.state.numDislikes}</b> dislikes!
-          <button onClick={this.increment}>
+          <button id="dislike" onClick={this.increment}>
             <b>Dislike</b>
           </button>
         </p>
