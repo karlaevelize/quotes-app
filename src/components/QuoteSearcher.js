@@ -8,21 +8,21 @@ class QuoteSearcher extends Component {
     keyword: ""
   };
 
-  // componentDidMount() {
-  //   fetch("https://quote-garden.herokuapp.com/quotes/search/tree")
-  //     .then(res => res.json())
-  //     .then(data => this.updateQuotes(data.results))
-  //     .catch(console.error);
-  // }
-
-  search(keyword) {
-    fetch(
-      "https://quote-garden.herokuapp.com/quotes/search/${encodeURIComponent(keyword)}"
-    )
+  componentDidMount() {
+    fetch("https://quote-garden.herokuapp.com/quotes/search/tree")
       .then(res => res.json())
       .then(data => this.updateQuotes(data.results))
       .catch(console.error);
   }
+
+  //   search(keyword) {
+  //   fetch(
+  //     "https://quote-garden.herokuapp.com/quotes/search/${encodeURIComponent(keyword)}"
+  //   )
+  //     .then(res => res.json())
+  //     .then(data => this.updateQuotes(data.results))
+  //     .catch(console.error);
+  // }
 
   updateQuotes = results => {
     this.setState({

@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import LikeCounter from "./LikeCounter";
 import DislikeCounter from "./DislikeCounter";
 
-// Create a component Quote, that takes two props (the quote text and the quote author),
-// and displays them.  Show the quote first, and then the author, prepended by “By:”
-
 class Quote extends Component {
   state = {
     style: null
